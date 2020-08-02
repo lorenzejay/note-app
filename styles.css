@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  margin-top: 10vh;
+  flex-direction: column;
+}
+textarea {
+  resize: horizontal;
+  max-width: 400px;
+  min-width: 200px;
+  outline: none;
+  border-top: 10px solid #333333;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.buttons {
+  margin-top: 5vh;
+}
+.create-note-btn,
+.color {
+  cursor: pointer;
+}
+.create-note-btn {
+  background-color: #333333;
+  color: white;
+  padding: 5px;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.note-background {
+  padding: 12px 20px;
+}
+.my-notes {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 400px);
+}
+
+.notes {
+  margin: 5vh 0;
+  padding: 10px;
+  width: 25vw;
+  height: 25vh;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.notes:hover {
+  transform: translate(0px, -5px);
+}
+.note-contents {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.trash-note {
+  align-self: flex-end;
+  position: absolute;
+  padding: 2px;
+  border: none;
+}
+.trash-note i {
+  pointer-events: none;
+}
+
+.display-menu {
+  display: grid;
+  width: 50vw;
+}

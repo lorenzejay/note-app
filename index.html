@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://use.fontawesome.com/c41250b912.js"></script>
+  </head>
+  <body>
+    <form action="">
+      <textarea
+        name="write-note"
+        id="write-note"
+        cols="50"
+        rows="10"
+        placeholder="// Write something here"
+      ></textarea>
+      <div class="buttons">
+        <input type="submit" name="submit" id="create-note" class="create-note-btn" />
+        <input type="color" class="color" id="color" />
+      </div>
+    </form>
+
+    <section class="my-notes" id="my-notes"></section>
+  </body>
+  <script src="./app.js"></script>
+</html>
